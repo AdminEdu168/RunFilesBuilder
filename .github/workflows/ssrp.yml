@@ -11,12 +11,8 @@ on:
   workflow_dispatch:
     inputs:
       package_version:
-        type: choice
         description: '这里是包版本'
-        required: true
-        options:
-          - packages-23.05
-          - packages-24.10
+        required: false
         default: 'packages-24.10'  
 
 jobs:
